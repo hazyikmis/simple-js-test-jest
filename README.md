@@ -8,7 +8,7 @@ To be tested files:
 
 Test files:
 - script.test.js
-- scriptAsync.spec.js
+- scriptAsync.spec.js (includes async functions testing & mocking)
 
 Please notice that, file names includes ".test." or ".spec." automatically being tested.
 

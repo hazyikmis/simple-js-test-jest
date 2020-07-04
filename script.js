@@ -8,7 +8,7 @@ const googleDatabase = [
 ];
 
 const googleSearch = (searchInput, db) => {
-  if (searchInput === "") searchInput = null;
+  if (searchInput === "") return [];
   const matches = db.filter((website) => {
     return website.includes(searchInput);
   });

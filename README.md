@@ -12,6 +12,11 @@ Test files:
 
 Please notice that, file names includes ".test." or ".spec." automatically being tested.
 
+# **************************
+If you just want to test vanilla js functions without any react... then you need to run "npm init -y" and then you need to install jest "npm install --save-dev jest". Finally you need to replace "test" script: "jest --watch".
+In react apps, you do not need to install jest. Its included :)
+# **************************
+
 
 >TDD: Test Driven Development (First write tests, then write codes and then refactor codes. NOT universally accepted but very common)
 ->Unit Tests (Testing individual functions or classes, cheapest&easiest to implement)

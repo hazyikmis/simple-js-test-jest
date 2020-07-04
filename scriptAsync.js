@@ -51,6 +51,18 @@ const getPeoplePromise = () => {
     });
 };
 
+const getPeoplePromise2 = (fetch) => {
+  return fetch("https://swapi.py4e.com/api/people")
+    .then((response) => response.json())
+    .then((data) => {
+      //console.log(data);
+      return {
+        count: data.count,
+        results: data.results,
+      };
+    });
+};
+
 //const getPeople = async (fetch) => {  //dependency infection
 const getPeople = async () => {
   const getRequest = await fetch("https://swapi.py4e.com/api/people");
@@ -67,6 +79,7 @@ getPeople();
 
 module.exports = {
   getPeoplePromise,
+  getPeoplePromise2,
   getPeople
 }
 
